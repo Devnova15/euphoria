@@ -1,0 +1,65 @@
+
+
+.title-wrapper {
+    display: flex;
+    gap: 20px;
+    text-align: center;
+}
+
+.title {
+    font-size: 35px;
+    color: #3C4242;
+}
+
+.title-decor {
+    width: 6px;
+    /*height: 30px;*/
+    border-radius: 10px;
+
+}
+
+.purple {
+    background-color: slateblue;
+}
+.red {
+    background-color: firebrick;
+}
+
+.green {
+    background-color: green;
+}
+.orange {
+    background-color: orange;
+}
+
+.title-wrapper {
+    display: flex;
+    gap: 20px;
+    text-align: center;
+}
+
+.title {
+    font-size: 35px;
+    color: #3C4242;
+}
+
+.title-decor {
+    width: 6px;
+    /*height: 30px;*/
+    border-radius: 10px;
+
+}
+
+.purple {
+    background-color: slateblue;
+}
+.red {
+    background-color: firebrick;
+}
+
+.green {
+    background-color: green;
+}
+.orange {
+    background-color: orange;
+}
