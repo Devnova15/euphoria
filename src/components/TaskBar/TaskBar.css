@@ -1,0 +1,92 @@
+.task-bar__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.task-bar__title__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 50px;
+}
+
+.task-bar__title {
+    font-size: 24px;
+    font-weight: bold;
+    font-style: italic;
+    border-bottom: 1px solid;
+}
+
+.task-bar-title__description {
+    font-size: 12px;
+    font-style: italic;
+    color: gray;
+}
+
+.task-bar__categories {
+    display: flex;
+    gap: 35px;
+    list-style: none;
+    padding: 0;
+}
+
+.task-bar__categories-title {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    cursor: pointer;
+}
+.task-bar__categories-title:hover {
+   color: rgb(0, 0, 0);
+    font-weight: 550;
+}
+.task-bar__search {
+    display: flex;
+    align-items: center;
+    background: #f5f5f5;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.search-icon {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+}
+
+
+.search-input {
+    border: none;
+    background: none;
+    outline: none;
+    font-size: 14px;
+}
+
+.task-bar__buttons-container {
+    width: 100px;
+    display: flex;
+    gap: 5px;
+}
+
+.heart-button, .cart-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: #f5f5f5;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+
+.heart-icon, .cart-icon {
+    width: 15px;
+    height: 15px;
+    align-items: center;
+}

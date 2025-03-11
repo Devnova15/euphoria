@@ -1,0 +1,56 @@
+.embla {
+    overflow: hidden;
+    position: relative;
+}
+
+.embla__container {
+    display: flex;
+}
+
+.embla__slide {
+    flex: 0 0 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    gap: 30px;
+    border-bottom: 1px solid lightgray;
+}
+
+.embla__image {
+    max-width: 40%;
+    height: auto;
+    object-fit: contain;
+}
+
+.embla__text {
+    max-width: 50%;
+    padding-left: 70px; /* уменьшите отступ */
+
+}
+
+.embla__text h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.embla__text p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.embla__button {
+    background-color: #8B0000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.embla__button:hover {
+    background-color: #a00000;
+}

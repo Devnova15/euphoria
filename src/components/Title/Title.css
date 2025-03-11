@@ -3,7 +3,7 @@
 .title-wrapper {
     display: flex;
     gap: 20px;
-    text-align: center;
+    padding-top: 30px;
 }
 
 .title {
@@ -32,11 +32,7 @@
     background-color: orange;
 }
 
-.title-wrapper {
-    display: flex;
-    gap: 20px;
-    text-align: center;
-}
+
 
 .title {
     font-size: 35px;
