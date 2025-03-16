@@ -1,0 +1,34 @@
+{
+  "products": [
+    {
+      "name": "Black Sweatshirt With Print",
+      "description": "Jhanvi’s Brand",
+      "image": "/InTheLimelightProducts-images/BlackSweatshirtWithPrint.jpeg",
+      "price": 123.00,
+      "id": 13
+    },
+    {
+      "name": "Line Pattern Black Hat",
+      "description": "AS’s Brand",
+      "image": "/InTheLimelightProducts-images/linePatternBlackHat.jpeg",
+      "price": 37.00,
+      "id": 14
+
+    },
+    {
+      "name": "Black Shorts",
+      "description": "MM’s Brand",
+      "image": "/InTheLimelightProducts-images/BlackShorts.jpeg",
+      "price": 37.00,
+      "id": 15
+    },
+    {
+      "name": "Levender Hoodie",
+      "description": "Nike’s Brand",
+      "image": "/InTheLimelightProducts-images/LevenderHoodie.jpeg",
+      "price": 119.00,
+      "id": 16
+
+    }
+  ]
+}

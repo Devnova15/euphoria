@@ -6,10 +6,9 @@ const Title = ({color, text}) => {
     return (
         <div className={'title-wrapper'}>
             <div className={cn('title-decor', color)}></div>
-            <h2 className={'title'}>
-                {text}
-            </h2>
+            <h2 className={'title'}>{text}</h2>
         </div>
+
     );
 }
 

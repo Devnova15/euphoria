@@ -4,7 +4,11 @@
     justify-content: space-between;
     padding: 10px 20px;
     background-color: #fff;
-    border-bottom: 1px solid #e0e0e0;
+    /*border-bottom: 1px solid #e0e0e0;*/
+    width: 100%;
+    position: relative;
+
+
 }
 
 .task-bar__title__container {
@@ -41,10 +45,12 @@
     color: #333;
     cursor: pointer;
 }
+
 .task-bar__categories-title:hover {
-   color: rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
     font-weight: 550;
 }
+
 .task-bar__search {
     display: flex;
     align-items: center;
@@ -84,9 +90,25 @@
     border: none;
     cursor: pointer;
 }
+.cart-button--active{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 15%;
+    border: none;
+    cursor: pointer;
+background-color: rgba(138, 51, 253, 1);
+    color: white !important;
+}
 
 .heart-icon, .cart-icon {
     width: 15px;
     height: 15px;
     align-items: center;
+}
+
+.icon--active{
+    color: white !important;
 }

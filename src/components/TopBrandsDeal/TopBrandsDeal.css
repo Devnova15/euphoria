@@ -1,0 +1,70 @@
+/*.grey{*/
+/*    background: rgba(60, 66, 66, 1);*/
+/*}*/
+/*.yellow {*/
+/*    background: rgba(251, 209, 3, 1);*/
+/*}*/
+
+/*.white {*/
+/*    background: white;*/
+/*}*/
+
+
+.topBrands-container {
+    margin-top: 50px;
+    background-color: rgba(60, 66, 66, 1);;
+    border-radius: 12px;
+    text-align: center;
+    height: 357px;
+    width: 1233px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.topBrands-text__container {
+    margin-bottom: 20px;
+}
+
+.topBrands-title {
+    color: #fff;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.topBrands-title__description {
+    color: #cfcfcf;
+    font-size: 18px;
+}
+
+.topBrands-title__description-decor {
+    color: #fbd144;
+    font-weight: bold;
+}
+
+.topBrands-cards__container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.topBrands-card {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 80px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.topBrands-card__image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}

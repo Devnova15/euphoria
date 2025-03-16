@@ -1,6 +1,7 @@
 import React from 'react';
 import './ProductCard.css'
-const ProductCard = ({imgUrl, name, desciption, id}) => {
+import {FaTag} from "react-icons/fa";
+const ProductCard = ({imgUrl, name, desciption, id, price}) => {
 
     return(
         <div className={"card"}>
@@ -14,6 +15,12 @@ const ProductCard = ({imgUrl, name, desciption, id}) => {
                     <p className={'card-description'}>{desciption}</p>
                 </div>
                 <div className={'card-button'}></div>
+                {price !== undefined && price !== null && (
+                    <div className="cart-price">
+                        <FaTag className="price-icon" />
+                        {price.toFixed(2)}$
+                    </div>
+                )}
             </div>
 
         </div>

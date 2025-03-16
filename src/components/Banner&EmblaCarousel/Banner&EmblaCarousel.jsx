@@ -2,6 +2,7 @@ import React from 'react';
 import useEmblaCarousel from 'embla-carousel-react';
 import Autoplay from 'embla-carousel-autoplay';
 import './Banner&EmblaCarousel.css';
+import Container from "../Container/Container.jsx";
 
 export function BannerEmblaCarousel() {
     const [emblaRef] = useEmblaCarousel({loop: false}, [Autoplay()]);
@@ -28,19 +29,19 @@ export function BannerEmblaCarousel() {
     ];
 
     return (
-        <div className="embla" ref={emblaRef}>
-            <div className="embla__container">
-                {slides.map((slide, index) => (
-                    <div className="embla__slide" key={index}>
-                        <div className="embla__text">
-                            <h1>{slide.title}</h1>
-                            <p>{slide.description}</p>
-                            <button className="embla__button">{slide.buttonText}</button>
+            <div className="embla" ref={emblaRef}>
+                <div className="embla__container">
+                    {slides.map((slide, index) => (
+                        <div className="embla__slide" key={index}>
+                            <div className="embla__text">
+                                <h1>{slide.title}</h1>
+                                <p>{slide.description}</p>
+                                <button className="embla__button">{slide.buttonText}</button>
+                            </div>
+                            <img src={slide.img} className="embla__image" alt={`Slide ${index + 1}`}/>
                         </div>
-                        <img src={slide.img} className="embla__image" alt={`Slide ${index + 1}`}/>
-                    </div>
-                ))}
+                    ))}
+                </div>
             </div>
-        </div>
     );
 }

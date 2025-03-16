@@ -1,23 +1,27 @@
 import './App.css';
 import TaskBar from "../../euphoria/src/components/TaskBar/TaskBar.jsx";
-import {BannerEmblaCarousel} from "./components/Banner&EmblaCarousel/Banner&EmblaCarousel.jsx";
-import Products from "./components/Products/Products.jsx";
+import Footer from "./components/Footer/Footer.jsx";
+import RootPage from "./pages/RootPage.jsx";
+import CartPage from "./pages/CartPage.jsx";
+import WishListPage from "./pages/WishListPage.jsx";
+import {
+    BrowserRouter as Router, Routes, Route
+} from "react-router-dom";
+import {ROUTS} from "./constants/routs.js";
+import Layout from "./Layout.jsx";
 
 function App() {
-    return (
-        <>
-            <TaskBar
-                img1="search.svg" name1="Search Icon"
-                img2="heart.svg" name2="Heart Icon"
-                img3="shopping-cart.svg" name3="Cart Icon"
-            />
-            <BannerEmblaCarousel/>
-            <Products/>
 
-            {/*<Banner/>*/}
-            {/*<Popular/>*/}
-            {/*<Footer/>*/}
-        </>
+    return (
+    <Router>
+        <Routes>
+            <Route path="/" element={<Layout/>}>
+                <Route index element={<RootPage/>}/>
+                <Route path={ROUTS.CART} element={<CartPage/>}/>
+                <Route path={ROUTS.WISHLIST} element={<WishListPage/>}/>
+            </Route>
+        </Routes>
+    </Router>
     );
 }
 

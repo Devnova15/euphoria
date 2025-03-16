@@ -1,0 +1,30 @@
+{
+  "products": [
+    {
+      "name": "Hoodies & Sweetshirt",
+      "description": "Explore Now!",
+      "image": "womenProductsImages/Hoodies&Sweetshirt.png",
+      "id": 9
+    },
+    {
+      "name": "Coats & Parkas",
+      "description": "Explore Now!",
+      "image": "/womenProductsImages/Coats&Parkas.png",
+      "id": 10
+
+    },
+    {
+      "name": "Tees & T-Shirt",
+      "description": "Explore Now!",
+      "image": "/womenProductsImages/Tees&T-Shirt.jpeg",
+      "id": 11
+    },
+    {
+      "name": "Boxers",
+      "description": "Explore Now!",
+      "image": "/womenProductsImages/Boxers.png",
+      "id": 12
+
+    }
+  ]
+}
