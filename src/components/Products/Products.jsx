@@ -4,22 +4,15 @@ import Title from "../Title/Title.jsx";
 import ProductCard from "../ProductCard/ProductCard.jsx";
 import './Products.css'
 
-const Products = () => {
+const Products = ({cart, setCart}) => {
 
     const [products, setProducts] = useState([]);
     const [womanProducts, setWomanProducts] = useState([]);
 
     const [isManLoading, setIsManLoading] = useState(true);
     const [isWomanLoading, setIsWomanLoading] = useState(true);
-    console.log(products)
 
-    // useEffect(() => {
-    //     const timer = setTimeout(() => {
-    //         setIsLoading(false)
-    //     }, 3000)
-    //     return () => clearTimeout(timer);
-    //
-    // }, [])
+
 
     useEffect(() => {
         const getManProducts = async () => {
@@ -30,7 +23,7 @@ const Products = () => {
                 setIsManLoading(true)
                 const response = await fetch('/man-products.json');
                 const data = await response.json();
-                console.log(data);
+
 
                 if (data.products) {
                     setProducts(data.products)
@@ -79,13 +72,17 @@ const Products = () => {
                 </div>
 
                 <div className={`man-product-cards-container ${isManLoading ? 'hidden' : ''}`}>
-                    {products.map(({ id, description, image, name }) => (
+                    {products.map(({ id, description, image, name, price, discount }) => (
                         <ProductCard
                             key={id}
                             id={id}
                             description={description}
                             imgUrl={image}
                             name={name}
+                            cart={cart}
+                            setCart={setCart}
+                            price={price}
+                            discount={discount}
                         />
                     ))}
                 </div>
@@ -98,13 +95,17 @@ const Products = () => {
                 </div>
 
                 <div className={`woman-product-cards-container ${isWomanLoading ? 'hidden' : ''}`}>
-                    {womanProducts.map(({ id, description, image, name }) => (
+                    {womanProducts.map(({ id, description, image, name, discount}) => (
                         <ProductCard
                             key={id}
                             id={id}
                             description={description}
                             imgUrl={image}
                             name={name}
+                            cart={cart}
+                            setCart={setCart}
+                            discount={discount}
+
                         />
                     ))}
                 </div>

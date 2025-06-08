@@ -16,7 +16,7 @@ const LimelightProducts = () => {
                 setIsLimelightProductsLoading(true)
                 const response = await fetch('/limelight-products.json');
                 const data = await response.json();
-                console.log(data);
+
 
                 if (data.products) {
                     setLimelightProducts(data.products)

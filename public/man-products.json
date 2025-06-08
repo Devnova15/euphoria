@@ -4,51 +4,67 @@
       "name": "Shirts",
       "description": "Explore Now!",
       "image": "productsImages/shirts.jpeg",
-      "id": 1
+      "id": 1,
+      "price": 100,
+      "discount": 0
+
     },
     {
       "name": "Printed T-Shirts",
       "description": "Explore Now!",
       "image": "/productsImages/printed_tshirts.jpeg",
-      "id": 2
-
+      "id": 2,
+      "price": 100,
+      "discount": 3
     },
     {
       "name": "Plain T-Shirt",
       "description": "Explore Now!",
       "image": "/productsImages/plain_tshirt.jpeg",
-      "id": 3
+      "id": 3,
+      "price": 100,
+      "discount": 5
     },
     {
       "name": "Polo T-Shirt",
       "description": "Explore Now!",
       "image": "/productsImages/polo_tshirt.jpeg",
-      "id": 4
-
+      "id": 4,
+      "price": 100,
+      "discount": 0
     },
     {
       "name": "Hoodies & Sweatshirt",
       "description": "Explore Now!",
       "image": "/productsImages/hoodies_sweatshirt.jpeg",
-      "id": 5
+      "id": 5,
+      "price": 100,
+      "discount": 15
     },
     {
       "name": "Jeans",
       "description": "Explore Now!",
       "image": "/productsImages/jeans.jpeg",
-      "id": 6
+      "id": 6,
+      "price": 100,
+      "discount": 0
+
     },
     {
       "name": "Activewear",
       "description": "Explore Now!",
       "image": "/productsImages/activewear.jpeg",
-      "id": 7
+      "id": 7,
+      "price": 100,
+      "discount": 0
     },
     {
       "name": "Boxers",
       "description": "Explore Now!",
       "image": "/productsImages/boxers.jpeg",
-      "id": 8
+      "id": 8,
+      "price": 100,
+      "discount": 0
     }
   ]
 }

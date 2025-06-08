@@ -4,11 +4,12 @@ import Products from "../components/Products/Products.jsx";
 import TopBrandsDeal from "../components/TopBrandsDeal/TopBrandsDeal.jsx";
 import LimelightProducts from "../components/InTheLimelightProducts/LimelightProducts.jsx";
 
-const RootPage = () => {
+const RootPage = ({cart, setCart}) => {
+
     return (
          <>
              <BannerEmblaCarousel/>
-             <Products/>
+             <Products cart={cart} setCart={setCart}/>
              <TopBrandsDeal/>
              <LimelightProducts/>
          </>

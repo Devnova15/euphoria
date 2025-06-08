@@ -4,26 +4,37 @@
       "name": "Hoodies & Sweetshirt",
       "description": "Explore Now!",
       "image": "womenProductsImages/Hoodies&Sweetshirt.png",
-      "id": 9
+      "id": 9,
+      "price": 100,
+      "discount": 0
+
     },
     {
       "name": "Coats & Parkas",
       "description": "Explore Now!",
       "image": "/womenProductsImages/Coats&Parkas.png",
-      "id": 10
+      "id": 10,
+      "price": 100,
+      "discount": 0
+
 
     },
     {
       "name": "Tees & T-Shirt",
       "description": "Explore Now!",
       "image": "/womenProductsImages/Tees&T-Shirt.jpeg",
-      "id": 11
+      "id": 11,
+      "price": 100,
+      "discount": 0
+
     },
     {
       "name": "Boxers",
       "description": "Explore Now!",
       "image": "/womenProductsImages/Boxers.png",
-      "id": 12
+      "id": 12,
+      "price": 100,
+      "discount": 5
 
     }
   ]

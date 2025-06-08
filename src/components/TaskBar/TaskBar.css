@@ -4,11 +4,8 @@
     justify-content: space-between;
     padding: 10px 20px;
     background-color: #fff;
-    /*border-bottom: 1px solid #e0e0e0;*/
     width: 100%;
     position: relative;
-
-
 }
 
 .task-bar__title__container {
@@ -17,6 +14,8 @@
     align-items: center;
     justify-content: center;
     padding-left: 50px;
+    text-decoration: none;
+    color: inherit;
 }
 
 .task-bar__title {
@@ -24,12 +23,14 @@
     font-weight: bold;
     font-style: italic;
     border-bottom: 1px solid;
+    margin: 0;
 }
 
 .task-bar-title__description {
     font-size: 12px;
     font-style: italic;
     color: gray;
+    margin: 0;
 }
 
 .task-bar__categories {
@@ -37,6 +38,7 @@
     gap: 35px;
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 .task-bar__categories-title {
@@ -60,27 +62,28 @@
 }
 
 .search-icon {
-    width: 15px;
-    height: 15px;
-    margin-right: 5px;
+    width: 18px;
+    height: 18px;
+    margin-right: 8px;
+    color: #777;
 }
-
 
 .search-input {
     border: none;
     background: none;
     outline: none;
     font-size: 14px;
+    min-width: 150px;
 }
 
 .task-bar__buttons-container {
-    width: 100px;
     display: flex;
-    gap: 5px;
+    gap: 15px;
+    justify-content: flex-end;
+    min-width: 100px;
 }
-/*///////*/
 
-.heart-button, .cart-button {
+.nav-button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -88,28 +91,32 @@
     height: 40px;
     background: #f5f5f5;
     border-radius: 50%;
-    border: none;
-    cursor: pointer;
-}
-.cart-button--active{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    border-radius: 15%;
-    border: none;
-    cursor: pointer;
-background-color: rgba(138, 51, 253, 1);
-    color: white !important;
+    transition: all 0.3s ease;
+    text-decoration: none;
 }
 
-.heart-icon, .cart-icon {
-    width: 15px;
-    height: 15px;
-    align-items: center;
+.nav-button--active {
+    background-color: rgba(138, 51, 253, 1);
+    box-shadow: 0 2px 8px rgba(138, 51, 253, 0.4);
+    transform: translateY(-2px);
 }
 
-.icon--active{
-    color: white !important;
+.nav-icon {
+    width: 20px;
+    height: 20px;
+    color: #555;
+    transition: color 0.3s ease;
+}
+
+.nav-icon--active {
+    color: white;
+}
+
+.nav-button:hover {
+    background-color: #e5e5e5;
+    transform: translateY(-1px);
+}
+
+.nav-button--active:hover {
+    background-color: rgba(138, 51, 253, 0.9);
 }
