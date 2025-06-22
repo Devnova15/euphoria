@@ -95,10 +95,11 @@ const Products = ({cart, setCart}) => {
                 </div>
 
                 <div className={`woman-product-cards-container ${isWomanLoading ? 'hidden' : ''}`}>
-                    {womanProducts.map(({ id, description, image, name, discount}) => (
+                    {womanProducts.map(({ id, description, image, name, discount, price}) => (
                         <ProductCard
                             key={id}
                             id={id}
+                            price={price}
                             description={description}
                             imgUrl={image}
                             name={name}

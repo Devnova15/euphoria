@@ -11,6 +11,7 @@ import {ROUTS} from "./constants/routs.js";
 import Layout from "./Layout.jsx";
 import {useState} from "react";
 import {LOCAL_STORAGE_KEYS} from "./constants/localStorageKeys.js";
+import {ToastContainer} from "react-toastify";
 
 
 const initCart = () => {
@@ -24,15 +25,19 @@ const App = () => {
     const [cart, setCart] = useState(initCart())
 
     return (
-        <Router>
-            <Routes>
-                <Route path="/" element={<Layout/>}>
-                    <Route index element={<RootPage cart={cart} setCart={setCart}/>}/>
-                    <Route path={ROUTS.CART} element={<CartPage cart={cart} setCart={setCart}/>}/>
-                    <Route path={ROUTS.WISHLIST} element={<WishListPage/>}/>
-                </Route>
-            </Routes>
-        </Router>
+
+<>
+    <Router>
+        <Routes>
+            <Route path="/" element={<Layout/>}>
+                <Route index element={<RootPage cart={cart} setCart={setCart}/>}/>
+                <Route path={ROUTS.CART} element={<CartPage cart={cart} setCart={setCart}/>}/>
+                <Route path={ROUTS.WISHLIST} element={<WishListPage/>}/>
+            </Route>
+        </Routes>
+    </Router>
+    <ToastContainer autoClose={1000}/>
+</>
     );
 }
 

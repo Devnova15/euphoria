@@ -3,6 +3,7 @@ import './ProductCard.css'
 import {FaTag} from "react-icons/fa";
 import {ShoppingBasket, Check} from "lucide-react";
 import {useCart} from "../../store/useCart.js";
+import {toast} from "react-toastify";
 
 const ProductCard = ({
                          imgUrl, name, description, id, price, discount, cart = [], setCart = () => {
@@ -15,15 +16,29 @@ const ProductCard = ({
     console.log("ZUSTAND CART: ", products)
 
 
-    const handleAddToCart = () => {
+    const handleAddToCart = async () => {
         if (!isInCart) {
+            // try {
+            //     const responce = await addProduct({imgUrl, name, description, id, price, discount, quantity: 1})
+            //     if (!responce.success) {
+            //         throw new Error(responce.message)
+            //     }
+            //     toast.success("Wow so easy!");
+            // } catch (error) {
+            //     toast.error(error.message);
+            // }
+
             addProduct( {imgUrl, name, description, id, price, discount, quantity:1})
+            toast.success("added product");
             setIsInCart(true)
+
         }
     }
 
     const handleRemoveFromCart = (id) => {
+
         removeProduct(id)
+        toast.success("remove product")
         setIsInCart(false)
     }
     return (
@@ -45,7 +60,7 @@ const ProductCard = ({
                     </button>
                 ) : (
                     <button className="cart-button" onClick={() => handleRemoveFromCart(id)}>
-                    {/*<button className="cart-button" onClick={() => {}}>*/}
+                        {/*<button className="cart-button" onClick={() => {}}>*/}
                         RemoveFromCart
                     </button>
                 )}

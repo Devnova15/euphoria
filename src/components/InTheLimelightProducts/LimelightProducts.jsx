@@ -39,7 +39,7 @@ const LimelightProducts = () => {
                 </div>
 
                 <div className={`limelight-product-cards-container ${isLimelightProductsLoading ? 'hidden' : ''}`}>
-                    {limelightProducts.map(({id, description, image, name, price}) => (
+                    {limelightProducts.map(({id, description, image, name, price, discount}) => (
                         <ProductCard
                             key={id}
                             id={id}
@@ -47,6 +47,7 @@ const LimelightProducts = () => {
                             imgUrl={image}
                             name={name}
                             price={price}
+                            discount={discount}
                         />
                     ))}
                 </div>
